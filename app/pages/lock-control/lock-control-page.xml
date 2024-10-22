@@ -1,0 +1,15 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page">
+    <ActionBar title="AccessPro" class="action-bar">
+        <NavigationButton text="Back" android.systemIcon="ic_menu_back" tap="{{ onBackTap }}" />
+    </ActionBar>
+    <StackLayout class="p-4">
+        <Image src="~/images/smart-lock.png" width="200" height="200" class="m-b-20" />
+        <Label text="ACCESO A PUERTA" class="text-center text-white text-lg m-b-20" />
+        <Button text="{{ isLocked ? 'Unlock' : 'Lock' }}" tap="{{ onToggleLock }}" class="btn btn-primary" width="200" height="200" borderRadius="100" />
+        <StackLayout orientation="horizontal" class="m-t-20">
+            <Label text="Open" class="text-white" />
+            <Label text=" - " class="text-white" />
+            <Label text="Lock" class="text-white" />
+        </StackLayout>
+    </StackLayout>
+</Page>

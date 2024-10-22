@@ -1,0 +1,11 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page">
+    <ActionBar title="ACCESS PRO" class="action-bar" />
+    <StackLayout class="p-4">
+        <Image src="~/images/logo.png" width="200" height="200" class="m-b-20" />
+        <TextField hint="Email ID" class="input" text="{{ email }}" />
+        <TextField hint="Enter Password" secure="true" class="input" text="{{ password }}" />
+        <Button text="Log In" tap="{{ onLoginTap }}" class="btn btn-primary m-t-20" />
+        <Label text="Don't have an account yet?" class="text-center text-white m-t-20" />
+        <Label text="Create an account" class="text-center text-blue-400" tap="{{ onCreateAccountTap }}" />
+    </StackLayout>
+</Page>
